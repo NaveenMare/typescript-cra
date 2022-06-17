@@ -1,0 +1,65 @@
+.card-base, .sassCardRow div, .sassCardRow .success, .sassCardRow .error, .sassCardRow .warning {
+  color: red;
+  font-size: x-large;
+  margin: 20px;
+  padding: 20px;
+  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.sassContainer {
+  font-family: "Poppins", Helvertica, sans-serif;
+  background-color: #ab99ca;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.sassTitle {
+  text-align: center;
+}
+.sassTitle h1 {
+  font-size: 5rem;
+  color: red;
+}
+
+.sassButtonRow button {
+  color: DarkGrey;
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+  border-radius: 10px;
+}
+.sassButtonRow .success {
+  color: green;
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+  border-radius: 10px;
+}
+.sassButtonRow .error {
+  color: red;
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+  border-radius: 10px;
+}
+.sassButtonRow .warning {
+  color: orange;
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.sassCardRow .success {
+  background-color: green;
+}
+.sassCardRow .error {
+  background-color: red;
+  color: black;
+}
+.sassCardRow .warning {
+  background-color: orange;
+}/*# sourceMappingURL=sass.css.map */

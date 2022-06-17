@@ -1,0 +1,64 @@
+$fonts: "Poppins", Helvertica, sans-serif;
+$primary-color: #ab99ca;
+$spacing: 2rem;
+
+@use "base";
+
+.sassContainer {
+  font-family: $fonts;
+  background-color: $primary-color;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.sassTitle {
+  text-align: center;
+  h1 {
+    font-size: 5rem;
+    color: red;
+  }
+}
+
+@mixin theme($theme: DarkGrey) {
+  color: $theme;
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.sassButtonRow {
+  button {
+    @include theme;
+  }
+  .success {
+    @include theme($theme: green);
+  }
+  .error {
+    @include theme($theme: red);
+  }
+  .warning {
+    @include theme($theme: orange);
+  }
+}
+
+.sassCardRow {
+  div {
+    @extend .card-base;
+  }
+  .success {
+    @extend .card-base;
+    background-color: green;
+  }
+  .error {
+    @extend .card-base;
+    background-color: red;
+    color: black;
+  }
+  .warning {
+    @extend .card-base;
+    background-color: orange;
+  }
+}

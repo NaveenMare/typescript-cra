@@ -3,6 +3,7 @@ import StyledCompenents from "./pages/styledComponents";
 import Home from "./pages/home";
 import EmotionPage from "./pages/emotion";
 import "./App.css";
+import Sass from "./pages/sass/Sass";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             path="/StyledComponents"
             element={<StyledCompenents />}
           ></Route>
+          <Route path="/sass" element={<Sass />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
